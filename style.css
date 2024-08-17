@@ -1,4 +1,8 @@
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
 /*TEXTO*/
 p {
@@ -26,14 +30,43 @@ h3 {
 
 
 /*OUTROS*/
-.topo {
+.titulo {
     padding: 0px 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: #008080;
   }
-  
+
+  .menu {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.411);
+    height: 50%;
+  }
+
+  .style {
+    margin-left: 7px;
+    background-color: #008080;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    line-height: 1.5em;
+    color: aliceblue;
+    font-weight: 600;
+  }
+
+  .style:hover {
+    background-color: #034747;;
+  }
+
+  .style:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 60%),
+      inset 2px 2px 3px rgb(0 0 0 / 60%);
+  }
+
   main {
     padding: 20px 0px;
     display: flex;
