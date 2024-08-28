@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="br">
 <head>
+  <!--SETUP-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textos Motivadores</title>
-    <link rel="stylesheet" href="style.css">
-    <!--ICON-->
+
+  <!--ICON-->
     <link rel="shortcut icon" href="Imagens/corrente_quebrada.png" type="image/x-icon">
-    <!--PREVIEW-->
+
+  <!--PREVIEW-->
     <meta property="og:type" content="website">
     <meta property="og:title" content="(DES)Conectados">
     <meta property="og:description" content="Site para o trabalho de português. Grupo do eixo Tecnologia: (DES)Conectados">
     <meta property="og:image" content="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/26d3-1f4a5.png">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Site para o trabalho de português. Grupo do eixo Tecnologia: (DES)Conectados"/>
-    <meta name="twitter:title" content="(DES)Conectados" />
-    <meta name="twitter:image" content="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/26d3-1f4a5.png" />
-    
+  <!--CSS-->
+    <link rel="stylesheet" href="CSS/titles.css">
+    <link rel="stylesheet" href="CSS/content.css">
+    <link rel="stylesheet" href="CSS/buttons.css"> 
+    <script src="Interações/button.js"></script>  
 </head>
+
 <body>
     <!--CABEÇALHO-->
-    <header class='titulo' style="padding: 10px;">
-        <img src="Imagens/corrente_quebrada.png" width="auto" height="40px" alt="" style="margin-right: 10px;">
-        <h1 style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; color: aliceblue;">TEXTOS MOTIVADORES</h1>
+    <header class='titulo' style="padding-top: 25px; padding-left: 50px; padding-bottom: 20px; height: 30px; text-align: right;">
+      <img src="https://cdn-icons-png.flaticon.com/512/254/254214.png" width="auto" height="30px" alt="" style="margin-right: 10px;">
+      <h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: aliceblue; text-align: right;">TEXTOS MOTIVADORES</h1>
     </header>
     <header class="menu">
-        <a href="index.html"><input type="button" class="style" value="Página Inicial"></a>
-        <a href="textos_motivadores.html"><input type="button" class="style" value="Textos Motivadores"></a>
-        <a href="redacoes.html"><input type="button" class="style" value="Redações"></a>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="dinamica.html">Dinâmica</a></li>
+            <li><a href="#">Contextualização</a></li>
+            <li><a href="#">Repertórios</a></li>
+            <li><a href="textos_motivadores.html">Textos Motivadores</a></li>
+            <li><a href="redacoes.html">Redações</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
     </header>
     
 
