@@ -85,7 +85,7 @@
   height: 0;
   margin: 30px 0 20px 20px;
   background: radial-gradient(circle, #034747, #034747);
-  border-radius: 25%;
+  border-radius: 5%;
   transition: 0.3s ease;
 }
 
