@@ -114,3 +114,47 @@
   height: 520px;
   transform: translate(-60%,-30%);
 }
+
+
+/*FLUTUANTE*/
+/*.menu_content {
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+}*/
+
+.item {
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+i {
+  font-size: 20px;
+}
+
+.active {
+  transform: rotate(360deg);
+}
+
+.active ~ .options .item:hover {
+  scale: 1.1;
+  transition: scale .3s;
+}
+
+.active ~ .options .item:nth-child(1) {
+  transform: translate(-4.5rem, -2.5rem);
+}
+
+.active ~ .options .item:nth-child(2) {
+  transform: translate(0, -5.5rem);
+  transition-delay: .1s;
+}
+
+.active ~ .options .item:nth-child(3) {
+  transform: translate(4.5rem, -2.5rem);
+  transition-delay: .2s;
+}
