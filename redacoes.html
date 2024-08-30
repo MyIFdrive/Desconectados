@@ -37,6 +37,29 @@
 </header>
 
 
+<!--BOTAO FLUTUANTE-->
+<div class="menu_content" style="position: fixed; z-index: 1000; bottom:100px;right:100px;">
+  <div class="item floating_item" style="background-color: #0081CF; z-index: 1; rotate: 45deg;">
+      <i class='bx bx-x'><img src="https://cdn-icons-png.freepik.com/512/4248/4248321.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0; rotate: 315deg;"></i>
+  </div>
+  <div class="options">
+      <div class="item" style="background-color: #008E9B;">
+          <i class='bx bxs-pencil'><img src="https://cdn-icons-png.flaticon.com/512/4693/4693312.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0;"></i>
+      </div>
+      <div class="item" style="background-color: #FFC75F;">
+          <i class='bx bx-cog'><img src="https://cdn-icons-png.flaticon.com/512/1076/1076334.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0;"></i>
+      </div>
+      <!--<div class="item" style="background-color: #D65DB1;">
+          <i class='bx bx-printer' ></i>
+      </div>-->
+  </div>
+</div>
+<script>
+  const menu = document.querySelector('.floating_item')
+  menu.onclick = () =>  menu.classList.toggle('active')
+</script>
+
+  
   <!--CORPO-->
   <main>
     <section style="background-color: aqua;">
