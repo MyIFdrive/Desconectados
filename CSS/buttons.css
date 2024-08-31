@@ -20,7 +20,7 @@
       inset 2px 2px 3px rgb(0 0 0 / 60%);
   }
 
-/*FLuTUANTE*/
+/*HAMBURGUER*/
 #menu {
   z-index: 2;
 }
@@ -116,6 +116,7 @@
 }
 
 
+
 /*FLUTUANTE*/
 /*.menu_content {
   width: 150px;
@@ -158,3 +159,6 @@ i {
   transform: translate(4.5rem, -2.5rem);
   transition-delay: .2s;
 }
+
+
+/*TOPO*/
