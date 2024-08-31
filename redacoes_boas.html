@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <!--SETUP-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+  <!--PREVIEW-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="(DES)Conectados">
+    <meta property="og:description" content="Site para o trabalho de português. Grupo do eixo Tecnologia: (DES)Conectados">
+    <meta property="og:image" content="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/26d3-1f4a5.png">
+
+  <!--ICON-->
+    <link rel="shortcut icon" href="Imagens/corrente_quebrada.png" type="image/x-icon">
+
+  <!--CSS-->
+    <link rel="stylesheet" href="CSS/titles.css">
+    <link rel="stylesheet" href="CSS/content.css">
+    <link rel="stylesheet" href="CSS/buttons.css">
+
+  <!--JAVASCRIPT-->
+  <script src="Interações/button.js"></script>
+
+</head>
+
+
+<body>
+  <!--CABEÇALHO-->
+  <header class='titulo' style="padding-top: 25px; padding-left: 50px; padding-bottom: 20px; height: 30px; text-align: right;">
+    <img src="Imagens/corrente_quebrada.png" width="auto" height="30px" alt="" style="margin-right: 10px;">
+    <h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: aliceblue; text-align: right;">(DES)CONECTADOS</h1>
+</header>
+<header class='titulo' style="padding: 10px; background-color: #008080da;">
+  <p style="font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: aliceblue;">Como era o mundo antes da internet?</p>
+</header>
+  <header class="menu">
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="dinamica.html">Dinâmica</a></li>
+          <li><a href="#">Contextualização</a></li>
+          <li><a href="#">Repertórios</a></li>
+          <li><a href="textos_motivadores.html">Textos Motivadores</a></li>
+          <li><a href="redacoes.html">Redações</a></li>
+        </ul>
+      </nav> 
+    </div>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+  </header>
+
+
+ <!--BOTAO FLUTUANTE-->
+<div class="menu_content" style="position: fixed; z-index: 1000; bottom:200px;right:100px;">
+  <div class="item floating_item" style="background-color: #0081CF; z-index: 1; rotate: 45deg;">
+      <i class='bx bx-x'><img src="https://cdn-icons-png.freepik.com/512/4248/4248321.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0; rotate: 315deg;"></i>
+  </div>
+  <div class="options">
+      <div class="item" onclick=changeMarcado() style="background-color: #008E9B;">
+          <i class='bx bxs-pencil'><img src="https://cdn-icons-png.flaticon.com/512/4693/4693312.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0;"></i>
+      </div>
+      <div class="item" onclick=changeNormal() style="background-color: #FFC75F;">
+          <i class='bx bx-cog'><img src="https://cdn-icons-png.flaticon.com/512/1076/1076334.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0;"></i>
+      </div>
+      <!--<div class="item" style="background-color: #D65DB1;">
+          <i class='bx bx-printer' ></i>
+      </div>-->
+  </div>
+</div>
+
+
+<!--SCROLL-->
+<div class="menu_content" onclick=scrollToTop();rotate() style="position: fixed; z-index: 1000; bottom:100px;right:100px; transform: rotate(360deg);">
+    <div class="item floating_item" id="topo" style="background-color: #eef9ff; z-index: 1; rotate: 45deg;">
+        <i class='bx bx-x'><img src="https://cdn-icons-png.flaticon.com/512/318/318413.png" alt="" style="height: 50px; width: auto; padding: 0; margin: 0; rotate: 315deg;"></i>
+    </div>
+ </div>
+ 
+<script>
+  const menu = document.querySelector('.floating_item')
+  menu.onclick = () =>  menu.classList.toggle('active')
+
+</script>
+
+
+  <!--CORPO-->
+  <main>
+    <!--Titulo-->
+    <section style="width: 100%;">
+      <header style="justify-content: center; background-color: #0080804f;">
+          <h2 style="color: #034747;";>REDAÇÕES BOAS</h2>
+      </header>
+      </section>
+  </main>
+
+
+<!--REDACAO 1-->
+  <div>
+    <header class="titulo" style="background-color: #008080da;">
+      <h3 style="color: aliceblue; padding: 5px;">TITULO 1</h3>
+    </header>
+  </div>
+
+<main>
+  <section>
+    <div class='normal'style="padding-top: 0px; margin-top: 0px;">
+      <p>&nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores aut recusandae, voluptatem nisi fugit at repudiandae alias voluptatum assumenda nam dolor eaque laborum laudantium eveniet. Corrupti cumque voluptatibus facilis!</p>
+      <p>&nbsp; &nbsp; &nbsp; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse numquam sapiente, ducimus similique, voluptatem eveniet facilis necessitatibus maxime incidunt recusandae reiciendis consequatur est soluta cum voluptatum veniam! Est, dolor?</p>
+      <p>&nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores aut recusandae, voluptatem nisi fugit at repudiandae alias voluptatum assumenda nam dolor eaque laborum laudantium eveniet. Corrupti cumque voluptatibus facilis!</p>
+      <p>&nbsp; &nbsp; &nbsp; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse numquam sapiente, ducimus similique, voluptatem eveniet facilis necessitatibus maxime incidunt recusandae reiciendis consequatur est soluta cum voluptatum veniam! Est, dolor?</p>
+    </div>
+    <div class='marcado'style="padding-top: 0px; margin-top: 0px; display: none">
+        <p style="color: #0081CF;">&nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores aut recusandae, voluptatem nisi fugit at repudiandae alias voluptatum assumenda nam dolor eaque laborum laudantium eveniet. Corrupti cumque voluptatibus facilis!</p>
+        <p style="color: #FFC75F;">&nbsp; &nbsp; &nbsp; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse numquam sapiente, ducimus similique, voluptatem eveniet facilis necessitatibus maxime incidunt recusandae reiciendis consequatur est soluta cum voluptatum veniam! Est, dolor?</p>
+        <p style="color: #0081CF;">&nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores aut recusandae, voluptatem nisi fugit at repudiandae alias voluptatum assumenda nam dolor eaque laborum laudantium eveniet. Corrupti cumque voluptatibus facilis!</p>
+        <p style="color: #FFC75F;">&nbsp; &nbsp; &nbsp; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse numquam sapiente, ducimus similique, voluptatem eveniet facilis necessitatibus maxime incidunt recusandae reiciendis consequatur est soluta cum voluptatum veniam! Est, dolor?</p>
+    </div>
+  </section>
+</main>
+  
+  <!--RODAPE-->
+  <footer class='titulo' style="padding: 10px;">
+    <p style="font-weight: 700; color: aliceblue;">(Des)Conectados</p>
+  </footer>
+  <footer class="menu" style="line-height: normal; position: inherit;">
+    <p style="font-size: x-small; text-align: center;">Site para o trabalho de português. Grupo do eixo Tecnologia: (DES)Conectados</p>
+    <p style="font-size: x-small; text-align: center;">Agradecemos pela atenção.</p>
+  </footer>
+</body>
+</html>
